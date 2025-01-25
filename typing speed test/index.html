@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Typing Speed Test</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper four">
+      <div class="type">
+        <h1 class="typing">Typing Speed Test</h1>
+      </div>
+    </div>
+   
+    <div class="text-display" id="text-display">
+      Click "Start Test" to begin.
+    </div>
+    <textarea class="input-area" id="input-area" rows="5" placeholder="Type here..." disabled></textarea>
+    <div class="stats">
+      <p><strong>Time Left:</strong> <span id="time-left">60</span> seconds</p>
+      <p><strong>Words Per Minute:</strong> <span id="wpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracy">0</span>%</p>
+    </div>
+    <button id="start-btn">Start Test</button>
+    <button id="reset-btn" style="display: none;">Reset Test</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--How It Works
+Start Test:
+
+Click Start Test to begin.
+The app displays a random sentence and enables the input field.
+The timer starts counting down.
+Typing:
+
+As the user types, the app calculates typed characters and checks for accuracy.
+If the user finishes typing the entire text before the timer runs out, the test ends automatically.
+End Test:
+
+If the user finishes typing the text or the timer reaches 0, the test stops.
+The app displays WPM and accuracy based on the actual time taken.
+Reset Test:
+
+Clicking Reset Test clears the results and prepares the app for a new test.
+-->
